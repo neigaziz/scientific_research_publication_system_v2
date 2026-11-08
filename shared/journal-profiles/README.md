@@ -1,0 +1,3 @@
+# Journal profile registry
+
+For each candidate journal record scope, article types, official author-instruction URL, data/code policy, ethics/reporting needs, word/figure/reference limits, OA options/fees, indexing/quartile evidence (database, category, year), checked date and unresolved questions. Re-verify official policies and ranking evidence at submission time; never hardcode current quartile/fees as permanent facts.

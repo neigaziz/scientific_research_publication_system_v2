@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Brief",
+  "type": "object",
+  "required": [
+    "project_id",
+    "research_domain",
+    "research_question"
+  ],
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "project_title": {
+      "type": "string"
+    },
+    "research_domain": {
+      "enum": [
+        "plant_breeding",
+        "animal_breeding",
+        "bioinformatics",
+        "computational_biology",
+        "interdisciplinary"
+      ]
+    },
+    "organism_or_system": {
+      "type": "string"
+    },
+    "research_question": {
+      "type": "string"
+    },
+    "hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "intended_contribution": {
+      "type": "string"
+    },
+    "study_type": {
+      "enum": [
+        "experimental",
+        "observational",
+        "computational",
+        "systematic_review",
+        "other"
+      ]
+    },
+    "data_available": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "data_access_and_permissions": {
+      "type": "string"
+    },
+    "target_audience_or_journals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "known_limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

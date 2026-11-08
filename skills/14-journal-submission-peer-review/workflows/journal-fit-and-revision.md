@@ -1,0 +1,3 @@
+# Journal fit and peer-review workflow
+
+For each candidate journal verify current aims/scope, article types, peer-review model, OA routes and fees, author instructions, data/code policies, reporting checklists, figure/word/reference limits and indexing/quartile evidence. Record URLs, database/category/year and checked date. Re-check at submission time. For peer review, create a comment matrix containing exact comment, issue type, manuscript location, response, evidence/action, revised text location and status. Do not claim new analyses/experiments were completed unless an execution record exists.

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "research-metadata-mcp"
+version = "0.1.0"
+description = "Read-only MCP server for Crossref, OpenAlex and PubMed metadata"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.9.0,<2.0.0"]
+
+[project.scripts]
+research-metadata-mcp = "research_metadata_mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["."]

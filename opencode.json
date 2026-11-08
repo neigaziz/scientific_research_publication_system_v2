@@ -1,0 +1,27 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "research-orchestrator",
+  "mcp": {
+    "servers": {
+      "research-metadata": {
+        "type": "local",
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "research_metadata_mcp"
+        ],
+        "cwd": ".",
+        "environment": {
+          "CROSSREF_MAILTO": "{env:CROSSREF_MAILTO}",
+          "OPENALEX_API_KEY": "{env:OPENALEX_API_KEY}",
+          "NCBI_API_KEY": "{env:NCBI_API_KEY}"
+        },
+        "disabled": true,
+        "timeout": {
+          "startup": 45000,
+          "execution": 120000
+        }
+      }
+    }
+  }
+}

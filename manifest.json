@@ -1,0 +1,25 @@
+{
+  "name": "scientific-research-publication-system",
+  "version": "1.1.0",
+  "primary_platform": "OpenCode macOS",
+  "companion_platform": "Chatbox AI macOS",
+  "agents": [
+    "research-orchestrator",
+    "research-intelligence",
+    "scientific-methods",
+    "computational-research",
+    "publication-review"
+  ],
+  "skill_count": 14,
+  "mcp_servers": [
+    "research-metadata"
+  ],
+  "mcp_tools": [
+    "health_check",
+    "search_crossref_works",
+    "get_crossref_work_by_doi",
+    "search_openalex_works",
+    "search_pubmed"
+  ],
+  "status": "created package; not installed on user Mac"
+}

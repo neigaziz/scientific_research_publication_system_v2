@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence Record",
+  "type": "object",
+  "required": [
+    "record_id",
+    "citation",
+    "source_type",
+    "relevance",
+    "extraction_status"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "citation": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "year": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "journal": {
+          "type": "string"
+        },
+        "doi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "source_type": {
+      "enum": [
+        "primary_research",
+        "review",
+        "preprint",
+        "protocol",
+        "editorial",
+        "other"
+      ]
+    },
+    "study_system": {
+      "type": "string"
+    },
+    "methods": {
+      "type": "string"
+    },
+    "key_findings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_locator": {
+      "type": "string"
+    },
+    "relevance": {
+      "type": "string"
+    },
+    "extraction_status": {
+      "enum": [
+        "metadata_only",
+        "abstract_only",
+        "full_text_reviewed",
+        "unverified"
+      ]
+    },
+    "verification_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "additionalProperties": true
+}

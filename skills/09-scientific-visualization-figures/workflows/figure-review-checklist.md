@@ -1,0 +1,3 @@
+# Figure review checklist
+
+Validate plotted data against analysis outputs. Check axis labels, units, transformations, scales, sample sizes, denominators, error bars, confidence intervals, group definitions, statistical annotations and legends. Ensure colour is not the only carrier of meaning. Ensure each panel is cited in the text and the legend can be understood independently. Preserve editable source and plotted data. Never manipulate evidence to misrepresent results.

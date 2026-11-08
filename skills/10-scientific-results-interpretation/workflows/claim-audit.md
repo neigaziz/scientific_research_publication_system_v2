@@ -1,0 +1,3 @@
+# Claim audit workflow
+
+For every material claim record: exact wording; evidence artifact/source; estimate or observation; uncertainty; design limitations; alternative explanation; whether causal language is justified; and recommended wording. Classify as observed, statistically inferred, biologically interpreted, literature-supported, speculative or unsupported. Remove or qualify unsupported claims.

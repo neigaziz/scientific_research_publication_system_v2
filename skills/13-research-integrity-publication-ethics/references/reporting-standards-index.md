@@ -1,0 +1,3 @@
+# Reporting standards index — applicability must be checked
+
+Potential resources include PRISMA (systematic reviews), ARRIVE (animal research), STROBE (observational studies), CONSORT (randomised trials) and discipline-specific standards. These are not universal checklists. Verify the current official version and journal requirements; never claim compliance unless each relevant item has been checked.

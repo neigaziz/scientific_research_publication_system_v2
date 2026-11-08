@@ -1,0 +1,6 @@
+STRUCTURAL VALIDATION PASSED
+- 14/14 Skills have matching folder names, SKILL.md frontmatter and support folders
+- 1 OpenCode primary orchestrator + 4 native subagent profiles present
+- OpenCode JSON config parses; metadata MCP is disabled pending installation
+- Python MCP server syntax parses
+- No live MCP startup/API tests or subject-matter accuracy benchmarks were run

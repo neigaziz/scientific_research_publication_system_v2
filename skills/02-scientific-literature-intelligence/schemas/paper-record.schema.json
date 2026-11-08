@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Scientific literature paper record",
+  "type": "object",
+  "required": [
+    "record_id",
+    "title",
+    "source_type",
+    "retrieval_status"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1600,
+      "maximum": 2100
+    },
+    "journal": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "doi": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "source_database": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_type": {
+      "enum": [
+        "primary_research",
+        "review",
+        "systematic_review",
+        "preprint",
+        "protocol",
+        "dataset",
+        "editorial",
+        "other"
+      ]
+    },
+    "retrieved_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "retrieval_status": {
+      "enum": [
+        "metadata_only",
+        "abstract_available",
+        "full_text_accessible",
+        "unavailable",
+        "not_checked"
+      ]
+    },
+    "screening_decision": {
+      "enum": [
+        "include",
+        "exclude",
+        "maybe",
+        "not_screened"
+      ]
+    },
+    "exclusion_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "claim_support_checked": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

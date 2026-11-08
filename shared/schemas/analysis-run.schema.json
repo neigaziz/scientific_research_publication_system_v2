@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Analysis Run",
+  "type": "object",
+  "required": [
+    "run_id",
+    "project_id",
+    "analysis_name",
+    "input_artifact_ids",
+    "software_environment",
+    "status"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "analysis_name": {
+      "type": "string"
+    },
+    "input_artifact_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "input_checksums": {
+      "type": "object"
+    },
+    "command_or_workflow": {
+      "type": "string"
+    },
+    "parameters": {
+      "type": "object"
+    },
+    "software_environment": {
+      "type": "object"
+    },
+    "logs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "output_artifact_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "diagnostics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "exit_code": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "running",
+        "completed",
+        "completed_with_warnings",
+        "failed",
+        "validated"
+      ]
+    }
+  },
+  "additionalProperties": true
+}
